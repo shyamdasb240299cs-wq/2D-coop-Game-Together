@@ -1,0 +1,20 @@
+# Ignore everything
+*
+
+# Un-ignore the directories we care about so git can traverse them
+!/apk V1/
+!/Test Build/
+!/Web Builds/
+
+# Un-ignore everything inside the directories we care about
+!/apk V1/**
+!/Test Build/**
+!/Web Builds/**
+
+# Explicitly re-ignore the debug/ship folders inside those directories
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*_BurstDebugInformation_DoNotShip/
+
+# Allow specific root files
+!.gitignore
+!README.md
